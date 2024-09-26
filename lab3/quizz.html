@@ -1,0 +1,104 @@
+<body>
+    <header>
+        <h2>Quizz</h2>
+    </header>
+
+    <form id="form1">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            Nome: <input type="text" name="nome" placeholder="Digite o seu nome" size="20" maxlength="50" autofocus required>
+            Apelido: <input type="text" name="Apelido" placeholder="Digite o seu apelido" size="20" maxlength="50" required>
+            <p>email: <input type="text" name="email" placeholder="Digite o seu email" autocomplete="on" size="20" maxlength="50" required></p>
+        </fieldset>
+
+        <p></p>
+
+        <fieldset>
+            <legend>Qual é o prato típico do Porto?</legend>
+            <input type="radio" name="comida" value="frango a guia" required>Frango a guia
+            <p></p>
+            <input type="radio" name="comida" value="Caldo verde">Caldo Verde
+            <p></p>
+            <input type="radio" name="comida" value="francesinha">Francesinha
+            <p></p>
+            <input type="radio" name="comida" value="bacalhau a bras">Bacalhau a bras
+        </fieldset>
+
+        <p></p>
+
+        <fieldset>
+            <legend>Quais destas são atrações turísticas do Porto?</legend>
+            <input type="checkbox" name="atracoes" value="Torre dos Clérigos">Torre dos Clérigos
+            <input type="checkbox" name="atracoes" value="Torre de belem">Torre de Belem
+            <p></p>
+            <input type="checkbox" name="atracoes" value="Livraria lello">Livraria Lello
+            <input type="checkbox" name="atracoes" value="Palácio Nacional de Mafra">Palácio Nacional de Mafra
+            <p></p>
+            <input type="checkbox" name="atracoes" value="Museu Vista Alegre">Museu Vista Alegre
+            <input type="checkbox" name="atracoes" value="Rio Douro">Rio Douro
+        </fieldset>
+
+        <p></p>
+
+        <fieldset>
+            <legend>Porto Vencedor da Champions</legend>
+            <input type="date" name="data" required> Data em que o Porto venceu a liga dos Campeões
+        </fieldset>
+
+        <p></p>
+
+        <fieldset>
+            <legend>Cor do Clube da cidade do Porto</legend>
+            <input type="color" name="cor" required> Qual é a cor do clube principal da cidade do Porto
+        </fieldset>
+
+        <p></p>
+
+        <!-- Pergunta de Time -->
+        <fieldset>
+            <legend>Que horas começa a festa de São João no Porto?</legend>
+            <input type="time" name="horario" required> Horário tradicional da festa
+        </fieldset>
+
+        <p></p>
+
+        <!-- Pergunta de Número -->
+        <fieldset>
+            <legend>Quantas pontes ligam o Porto a Vila Nova de Gaia?</legend>
+            <input type="number" name="pontes" min="1" max="10" step="1" required>
+        </fieldset>
+
+        <p></p>
+
+        <!-- Pergunta de Range -->
+        <fieldset>
+            <legend>Numa escala de 1 a 10, quanto você gosta do Porto?</legend>
+            <input type="range" name="gostar" min="1" max="10">
+        </fieldset>
+
+        <p></p>
+
+        <!-- Pergunta de Image -->
+        <fieldset>
+            <legend>Escolha uma imagem que represente a sua última visita ao Porto</legend>
+            <input type="file" name="foto" accept="image/*">
+        </fieldset>
+
+        <p></p>
+
+        <!-- Reset -->
+        <fieldset>
+            <legend>Limpar o quizz</legend>
+            <input type="reset" value="Limpar respostas">
+        </fieldset>
+
+        <p></p>
+
+        <!-- Submit -->
+        <fieldset>
+            <legend>Submeter o quizz</legend>
+            <input type="submit" value="Enviar respostas">
+        </fieldset>
+
+    </form>
+</body>
