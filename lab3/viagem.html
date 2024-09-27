@@ -1,0 +1,84 @@
+<header>
+    <h1>Porto</h1>
+    <a href="index.html">Home</a>
+    <a href="local.html">Localização</a>
+    <a href="multimedia.html">Multimedia</a>
+    <a href="info.html">Informação</a>
+    <a href="quizz.html">Quizz</a>
+    <a href="viagem.html">Viagem</a>
+    <img src="imagens/porto.webp" width="500">
+<header>
+    
+<body>
+   <h1>Registo de Viagem</h1>
+    <form method="post" action="/processar_viagem">
+        <!-- Dados pessoais -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            Nome: <input type="text" name="nome" placeholder="Digite o seu nome" required><br><br>
+            Apelido: <input type="text" name="apelido" placeholder="Digite o seu apelido" required><br><br>
+            Email: <input type="email" name="email" placeholder="Digite o seu email" required>
+        </fieldset>
+
+        <p></p>
+
+        <!-- Datas da viagem -->
+        <fieldset>
+            <legend>Datas da Viagem</legend>
+            Data de Partida: <input type="date" name="data_partida" required><br><br>
+            Data de Regresso: <input type="date" name="data_regresso" required>
+        </fieldset>
+
+        <p></p>
+
+        <!-- Número de passageiros -->
+        <fieldset>
+            <legend>Número de Passageiros</legend>
+            <input type="number" name="passageiros" min="1" max="50" required>
+        </fieldset>
+
+        <p></p>
+
+        <!-- Meio de transporte -->
+        <fieldset>
+            <legend>Meio de Transporte Favorito</legend>
+            <input type="radio" name="transporte" value="carro" required>Carro<br>
+            <input type="radio" name="transporte" value="comboio">Comboio<br>
+            <input type="radio" name="transporte" value="aviao">Avião<br>
+            <input type="radio" name="transporte" value="outro">Outro
+        </fieldset>
+
+        <p></p>
+
+        <!-- Serviço desejado -->
+        <fieldset>
+            <legend>Serviço na Viagem</legend>
+            <select name="servico" required>
+                <option value="basico">Básico</option>
+                <option value="premium">Premium</option>
+            </select>
+        </fieldset>
+
+        <p></p>
+
+        <!-- Pedidos especiais -->
+        <fieldset>
+            <legend>Pedidos Especiais</legend>
+            <textarea name="pedidos_especiais" placeholder="Digite seus pedidos especiais aqui" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <p></p>
+
+        <!-- Valor por pessoa/dia -->
+        <fieldset>
+            <legend>Valor Esperado por Pessoa e por Dia</legend>
+            <input type="number" name="valor" min="1" step="0.01" placeholder="Valor em euros" required>
+        </fieldset>
+
+        <p></p>
+
+        <!-- Botão de Envio -->
+        <input type="submit" value="Submeter Viagem">
+    </form>
+</body>
+</html>
