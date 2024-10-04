@@ -44,7 +44,7 @@ body {
   }
   
   nav a:hover {
-    background-color: white;
+    background-color: #afb6e1;
     color: rgb(51, 0, 254);
   }
   
@@ -65,7 +65,7 @@ body {
   main {
     margin: 20px;
     padding: 20px;
-    background-color: white;
+    background-color: #afb6e1;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
@@ -114,4 +114,19 @@ body {
     border-left: 4px solid #4CAF50;
     font-style: italic;
     margin-top: 20px;
+  }
+
+  /* Estilo para as imagens dispostas em linha */
+.image-gallery {
+    display: flex;
+    justify-content: space-between; /* Espaço entre as imagens */
+    margin-top: 20px;
+  }
+  
+  .image-gallery img {
+    width: 32%; /* Ocupa cerca de 1/3 da largura da área disponível */
+    border: 2px solid #333; /* Moldura ao redor das imagens */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    object-fit: cover; /* Para garantir que a imagem preencha a moldura */
   }
