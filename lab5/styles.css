@@ -1,0 +1,139 @@
+/* Estilo para o corpo da página */
+body {
+  background-color: rgb(146, 192, 231);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para o cabeçalho */
+header {
+background-color: rgb(146, 192, 231); /* Cor de fundo */
+padding: 20px;
+text-align: center;
+color: rgb(34, 24, 223);
+text-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+}
+
+/* Estilo para centralizar as imagens */
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; /* Ajusta para garantir que a imagem não ultrapasse a largura da página */
+}
+
+/* Estilo para o título principal */
+h1 {
+  margin: 0;
+  font-size: 8.5em;
+}
+
+/* Estilo para a aba de navegação */
+nav {
+  background-color: #333;
+  padding: 9px;
+  text-align: center;
+}
+
+/*Cor da letra da aba de navegação */
+nav a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: rgb(251, 251, 255);
+  padding: 5px 50px;
+}
+
+nav a:hover {
+  background-color: rgb(175, 182, 225);
+  color: rgb(51, 0, 254);
+}
+
+/* Estilo para a seção de imagens (container) */
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.container img {
+  width: 32%; /* Ajusta a largura das imagens dentro do container */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para a área principal */
+main {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(0, 94, 255);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative; /* Pode ajustar para fixed se quiser manter no fundo da página */
+  bottom: 0;
+  width: 100%;
+}
+
+/* Distribuição das imagens */
+.image-gallery {
+  display: flex;
+  justify-content: space-around; /* Espaço ao redor das imagens */
+  margin-top: 20px;
+}
+
+.image-gallery img {
+  width: 32%; /* Ocupa cerca de 1/3 da largura da área disponível */
+  border: 2px solid #333; /* Moldura ao redor das imagens */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  object-fit: cover; /* Para garantir que a imagem preencha a moldura */
+  transition: transform 0.3s ease; /* Animação suave ao passar o rato */
+}
+
+.image-gallery img:hover {
+  transform: scale(1.1); /* Ampliar a imagem ao passar o rato */
+}
+
+/* Estilização para as seções de Multimédia (Fotografias, Vídeo, Poema) */
+#fotografias h3, #video h3, #poema h3 {
+  color: #ffffff; /* Cor de destaque vibrante */
+  font-size: 26px;
+  border-bottom: 3px solid #fefefe;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Ajustar as imagens da secção Fotografias */
+#fotografias img {
+  width: 30%; /* Ajustar largura das imagens */
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Centralizar o vídeo na secção Vídeo */
+#video iframe {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte no vídeo */
+}
+
+/* Estilizar o poema */
+#poema {
+  background-color: #e0f7fa; /* Cor de fundo clara */
+  padding: 20px;
+  border-left: 6px solid #ff0000; /* Borda destacada */
+  font-style: italic;
+  margin-top: 20px;
+  border-radius: 8px; /* Bordas arredondadas */
+}
