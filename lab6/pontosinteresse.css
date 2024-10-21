@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+  }
 nav {
     background-color: #333;
     padding: 9px;

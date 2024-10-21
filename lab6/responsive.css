@@ -1,0 +1,80 @@
+@media only screen and (max-width: 414px){
+/*Mobile portrait*/
+
+body{
+    display: grid;
+    width: 100vw;
+    height: 100vw;
+
+    background-color:rgba(0, 119, 255, 0.719);
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 40vw 30vw 120vw 30vw;
+
+    grid-template-areas: 
+    'header'
+    'nav'
+    'main'
+    'footer';
+}
+}
+
+@media only screen and (min-width: 415px) and (max-width: 812px){
+body{
+    display: grid;
+    width: 100vw;
+    height: 100vw;
+
+    background-color:rgba(255, 0, 132, 0.719);
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vw 10vw 60vw 12vw;
+
+    grid-template-areas: 
+    'header'
+    'nav'
+    'main'
+    'footer';
+}
+}
+
+@media only screen and (min-width: 813px) and (max-width: 1024px){
+/* tablet*/
+
+body{
+    display: grid;
+    width: 100vw;
+    height: 100vw;
+
+    background-color: brown;
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 40vw 3fr 40vw;
+
+    grid-template-areas: 
+    'header' 'header'
+    'nav'  'main'
+    'footer' 'footer';
+    gap: 10px; /* Espaço entre as áreas */
+    height: 100vh; /* A altura do ecrã completo */
+}
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+/*laptop */
+body{
+display: grid;
+    width: 100vw;
+    height: 100vw;
+}
+}
+@media only screen and (min-width: 3840px){
+/*4k*/
+body{
+    display: grid;
+    width: 100vw;
+    height: 100vw;
+    background-color: rgb(235, 0, 0)
+};
+}

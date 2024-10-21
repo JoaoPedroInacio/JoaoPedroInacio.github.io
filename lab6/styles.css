@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 /* Estilo para o corpo da página */
 body {
   background-color: rgb(146, 192, 231);

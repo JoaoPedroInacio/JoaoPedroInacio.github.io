@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 /* Estilo para o cabeçalho */
 header {
     display: flex;
