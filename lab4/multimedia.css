@@ -1,0 +1,67 @@
+/* Estilos para os títulos principais das secções */
+h3, h2 {
+    font-size: 1.8em; /* Tamanho grande para destaque */
+    font-weight: bold; /* Negrito */
+    color: rgb(146, 192, 231); /* Cor preta para destaque */
+    margin-bottom: 10px;
+}
+
+/* Linha separadora abaixo dos títulos */
+h3::after, h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255); /* Cor da linha de separação */
+    margin-top: 5px;
+}
+
+.fotografias-container {
+    display: flex;
+    justify-content: space-around; /* Espaço ao redor das imagens */
+    flex-wrap: wrap; /* Permite que as imagens fiquem numa linha e quebrem se necessário */
+    margin-top: 20px; /* Espaço entre as imagens */
+}
+
+.fotografia-item {
+    width: 20%; /* Cada imagem ocupa cerca de 30% da largura do container */
+    text-align: center;
+}
+
+.fotografia-item img {
+    width: 100%; /* A imagem ocupa toda a largura disponível no container */
+    border: 8px solid rgb(146, 192, 231); /* Borda maior para simular uma moldura */
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave ao redor da imagem */
+}
+
+.fotografia-item a {
+    display: block; /* Certifica que o link ocupa toda a área da imagem */
+}
+
+.fotografia-item p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 20px; /* Espaço acima do vídeo */
+}
+
+.video-container iframe {
+    width: 100%; /* Define a largura do vídeo (pode ajustar conforme o design) */
+    max-width: 800px; /* Limita a largura máxima */
+    height: auto; /* Mantém a proporção do vídeo */
+}
+
+.multimedia-container {
+    color: white;
+}
+
+.poema-container {
+    color: white;
+}

@@ -44,6 +44,7 @@ nav a {
   padding: 5px 50px;
 }
 
+/* Cor da letra da aba de navegação quando passa o rato */
 nav a:hover {
   background-color: rgb(175, 182, 225);
   color: rgb(51, 0, 254);
@@ -101,39 +102,4 @@ footer {
 
 .image-gallery img:hover {
   transform: scale(1.1); /* Ampliar a imagem ao passar o rato */
-}
-
-/* Estilização para as seções de Multimédia (Fotografias, Vídeo, Poema) */
-#fotografias h3, #video h3, #poema h3 {
-  color: #ffffff; /* Cor de destaque vibrante */
-  font-size: 26px;
-  border-bottom: 3px solid #fefefe;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-/* Ajustar as imagens da secção Fotografias */
-#fotografias img {
-  width: 30%; /* Ajustar largura das imagens */
-  margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Centralizar o vídeo na secção Vídeo */
-#video iframe {
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte no vídeo */
-}
-
-/* Estilizar o poema */
-#poema {
-  background-color: #e0f7fa; /* Cor de fundo clara */
-  padding: 20px;
-  border-left: 6px solid #ff0000; /* Borda destacada */
-  font-style: italic;
-  margin-top: 20px;
-  border-radius: 8px; /* Bordas arredondadas */
 }
