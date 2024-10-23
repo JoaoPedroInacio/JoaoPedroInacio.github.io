@@ -1,80 +1,137 @@
-@media only screen and (max-width: 414px){
-/*Mobile portrait*/
-
-body{
-    display: grid;
-    width: 100vw;
-    height: 100vw;
-
-    background-color:rgba(0, 119, 255, 0.719);
-
-    grid-template-columns: 1fr;
-    grid-template-rows: 40vw 30vw 120vw 30vw;
-
-    grid-template-areas: 
-    'header'
-    'nav'
-    'main'
-    'footer';
+.dropbtn {
+    visibility: hidden;
 }
+/* Media Query para mobile (máximo 414px) - Menu Dropdown aqui */
+@media only screen and (max-width: 414px) {
+    body {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 10vw auto 30vw;
+        grid-template-areas:
+            'header'
+            'nav'
+            'main'
+            'footer';
+    }
+ /* Tornar o botão visível apenas nesta resolução */
+ .dropbtn {
+    visibility: visible;
 }
-
-@media only screen and (min-width: 415px) and (max-width: 812px){
-body{
-    display: grid;
-    width: 100vw;
-    height: 100vw;
-
-    background-color:rgba(255, 0, 132, 0.719);
-    
-    grid-template-columns: 1fr;
-    grid-template-rows: 20vw 10vw 60vw 12vw;
-
-    grid-template-areas: 
-    'header'
-    'nav'
-    'main'
-    'footer';
-}
+    /* Estilo geral do dropdown - apenas a estrutura, sem o comportamento */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-@media only screen and (min-width: 813px) and (max-width: 1024px){
-/* tablet*/
-
-body{
-    display: grid;
-    width: 100vw;
-    height: 100vw;
-
-    background-color: brown;
-
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 40vw 3fr 40vw;
-
-    grid-template-areas: 
-    'header' 'header'
-    'nav'  'main'
-    'footer' 'footer';
-    gap: 10px; /* Espaço entre as áreas */
-    height: 100vh; /* A altura do ecrã completo */
+.menu-title {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc; /* Ajuste opcional para styling */
+    background-color: white; /* Mantém a palavra Menu destacada */
 }
 
+/* Links dentro do dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1440px){
-/*laptop */
-body{
-display: grid;
-    width: 100vw;
-    height: 100vw;
+.dropdown-content a:hover {
+    background-color: #575757; /* Cor ao passar por cima das opções */
 }
+
+    /* O conteúdo do dropdown é inicialmente oculto */
+    .dropdown-content {
+        display: none; /* Oculto por padrão */
+        position: absolute; /* Faz com que apareça logo abaixo do menu */
+        left: 0;
+        top: 100%; /* Coloca o menu abaixo do botão 'Menu' */
+        background-color: #333;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    /* Exibir o menu dropdown quando o rato está sobre o .dropdown */
+    .dropdown:hover .dropdown-content {
+        display: block; /* Exibe o menu ao passar o rato */
+    }
 }
-@media only screen and (min-width: 3840px){
-/*4k*/
-body{
-    display: grid;
-    width: 100vw;
-    height: 100vw;
-    background-color: rgb(235, 0, 0)
-};
+
+@media only screen and (min-width: 415px) and (max-width: 812px) {
+    body {
+        display: grid;
+        width: 100vw;
+        height: 100vw;
+        background-color:rgba(0, 0, 0, 0.719);
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vw 10vw 60vw 12vw;
+        grid-template-areas: 
+        'header'
+        'nav'
+        'main'
+        'footer';
+    }
+}
+
+@media only screen and (min-width: 813px) and (max-width: 1024px) {
+    body {
+        display: grid;
+        background-color: rgba(0, 94, 255, 0.827);
+        grid-template-columns: 0.5fr 2.5fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "header header"
+            "nav main"
+            "footer footer";
+        height: 100vh;
+    }
+
+    header {
+        grid-area: header;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav {
+        grid-area: nav;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main {
+        grid-area: main;
+        padding: 20px;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        display: grid;
+        width: 100vw;
+        height: 100vw;
+        background-color: black;
+    }
+}
+
+@media only screen and (min-width: 3840px) {
+    body {
+        display: grid;
+        width: 100vw;
+        height: 100vw;
+        background-color: rgb(235, 0, 0);
+    }
 }
