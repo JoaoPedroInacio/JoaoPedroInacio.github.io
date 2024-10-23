@@ -66,16 +66,59 @@
 @media only screen and (min-width: 415px) and (max-width: 812px) {
     body {
         display: grid;
-        width: 100vw;
-        height: 100vw;
-        background-color:rgba(0, 0, 0, 0.719);
-        grid-template-columns: 1fr;
-        grid-template-rows: 20vw 10vw 60vw 12vw;
+        background-color: rgba(14, 35, 72, 0.732);
+        grid-template-columns:75% 25%;
+        grid-template-rows: auto 1fr auto;
         grid-template-areas: 
-        'header'
-        'nav'
-        'main'
-        'footer';
+            "header header"
+            "main nav"
+            "footer footer";
+        height: 100vh;
+    }
+
+    header {
+        grid-area: header;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav {
+        width: 85%; /* Reduz a largura para deixar espaço ao redor */
+        height: auto; /* Ajusta a altura conforme o conteúdo */
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px; /* Aumenta o arredondamento */
+        margin: 20px auto; /* Centraliza horizontalmente e adiciona margem superior e inferior */
+        background-color: #333; /* Cor de fundo do nav */
+        padding: 20px; /* Espaçamento interno */
+    }
+    
+    /* Links dentro do menu */
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin: 5px 0; /* Espaçamento vertical entre os links */
+        display: block;
+    }
+    
+    /* Efeito ao passar o rato pelos links */
+    nav a:hover {
+        background-color: #575757; /* Cor ao passar o rato por cima dos links */
+        border-radius: 5px; /* Arredonda os links ao passar o rato */
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+        padding: 10px;
     }
 }
 
@@ -83,7 +126,7 @@
     body {
         display: grid;
         background-color: rgba(0, 94, 255, 0.827);
-        grid-template-columns: 0.5fr 2.5fr;
+        grid-template-columns:20% 80%;
         grid-template-rows: auto 1fr auto;
         grid-template-areas: 
             "header header"
@@ -99,16 +142,37 @@
     }
 
     nav {
+        width: 85%; /* Reduz a largura para deixar espaço ao redor */
+        height: auto; /* Ajusta a altura conforme o conteúdo */
         grid-area: nav;
-        padding: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
+        border-radius: 20px; /* Aumenta o arredondamento */
+        margin: 20px auto; /* Centraliza horizontalmente e adiciona margem superior e inferior */
+        background-color: #333; /* Cor de fundo do nav */
+        padding: 20px; /* Espaçamento interno */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Efeito de sombra para destacar o menu */
+    }
+    
+    /* Links dentro do menu */
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin: 5px 0; /* Espaçamento vertical entre os links */
+        display: block;
+    }
+    
+    /* Efeito ao passar o rato pelos links */
+    nav a:hover {
+        background-color: #575757; /* Cor ao passar o rato por cima dos links */
+        border-radius: 5px; /* Arredonda os links ao passar o rato */
     }
 
     main {
         grid-area: main;
-        padding: 20px;
     }
 
     footer {
