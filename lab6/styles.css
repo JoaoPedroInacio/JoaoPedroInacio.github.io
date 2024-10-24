@@ -1,6 +1,42 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  display: grid;
+  grid-template-areas:
+      'header_area header_area header_area'
+      'nav_area nav_area nav_area'
+      'main_area main_area aside_area'
+      'footer_area footer_area footer_area';
+  max-width: 100vw;
+}
+
+header {
+  grid-area: header_area;
+}
+
+nav {
+  grid-area: nav_area;
+}
+
+main {
+  grid-area: main_area;
+}
+
+footer {
+  grid-area: footer_area;
+}
+
+aside {
+  grid-area: aside_area;
+}
+
+aside {
+  border-radius: 10px;
+  margin: 10px;
+
+}
 /* Estilo para o corpo da página */
 body {
   background-color: rgb(146, 192, 231);
@@ -66,16 +102,24 @@ nav a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.container-main-aside{
 /* Estilo para a área principal */
-main {
+.main{
   margin: 20px;
   padding: 20px;
   background-color: rgb(0, 94, 255);
-  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 
+.aside{
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(0, 94, 255);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+}
 /* Estilo para o rodapé */
 footer {
   background-color: #333;

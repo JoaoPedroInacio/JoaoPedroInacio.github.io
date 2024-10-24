@@ -1,0 +1,169 @@
+
+
+@media (max-width:550px){
+    body{
+    
+        display:grid;
+        background-color: rgb(255, 255, 255);
+        grid-template-areas: 
+        'header'
+        'main'
+        'aside'
+        'nav'
+        'footer';
+    }
+
+    .lista a{
+      width: 50%;
+      height: 50%;
+      align-items: center;
+      background-color: rgb(73, 73, 73);
+      display:grid;
+      grid-template-areas: 
+      "lab1  lab4"
+      "lab2   lab5"
+      "lab3  lab6";
+   }
+
+   #lab1{
+      grid-area:lab1;
+      display: flex;
+      height: 20px;
+      width: 40px;
+      text-align: center;
+      padding: 10px;
+   }
+   #lab2{
+      grid-area:lab2;
+      display: flex;
+      height: 20px;
+      width: 40px;
+      text-align: center;
+      padding: 10px;
+   }
+   #lab3{
+      grid-area: lab3;
+      display: flex;
+      height: 20px;
+      width: 40px;
+      text-align: center;
+      padding: 10px;
+   }
+   #lab4{
+      grid-area: lab4;
+      display: flex;
+      height: 20px;
+      width: 40px;
+      text-align: center;
+      padding: 10px;
+   }
+   #lab5{
+      grid-area: lab5;
+      display: flex;
+      height: 20px;
+      width: 40px;
+      text-align: center;
+      padding: 10px;
+   }
+   #lab6{
+      grid-area: lab6;
+      display: flex;
+      height: 20px;
+      width: 40px;
+      text-align: center;
+      padding: 10px;
+   }
+
+}
+@media (min-width:551px){
+    body{
+        display:grid;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        grid-template-areas:
+        "header header"
+        "main main"
+        "aside nav"
+        "footer footer";
+    }
+}
+    header {
+        grid-area: header;
+        background-color: rgba(206, 206, 206, 0.761); /* Cor de fundo */
+        padding: 10px;
+        text-align: center;
+        color: black;
+        border-radius: 10px;
+        margin: 10px;
+     }
+
+
+     main{
+        grid-area: main;
+        grid-template-columns: 20% 80%;
+        display:flex;
+        flex-direction: row;
+       
+        background-color:rgba(221, 221, 221, 0.647);
+        border-radius: 10px;
+        margin: 10px;
+        padding:10px;
+        gap: 20px;
+        
+     }
+
+
+     .texto{
+        display:flex;
+        flex-direction: column;
+        flex: 1;
+     }
+
+     .texto h2{
+        margin-bottom: 10px;
+     }
+     aside{
+        grid-area: aside;
+        background-color: rgba(221, 221, 221, 0.647);
+        border-radius: 10px;
+        margin: 10px;
+        padding:10px;
+     }
+
+     nav{
+        grid-area: nav;
+        background-color: rgb(221, 221, 221, 0.647);
+        border-radius: 10px;
+        margin: 10px;
+        padding:10px;
+        color: black;
+
+     }
+
+     .lista a{
+      background-color: rgb(73, 73, 73);
+      text-decoration: none;
+      text-align: center;
+      color:white;  
+      border-radius: 5px;
+      margin:5px
+     }
+
+     nav a:nth-child(2n+1){
+        background-color: rgb(150, 150, 150);
+     }
+
+     nav a:hover{
+        background-color: rgb(0, 0, 0);
+
+     }
+
+     footer{
+        grid-area: footer;
+        background-color: rgb(214, 214, 214);
+        border-radius: 10px;
+        text-align: center;
+        color:black;
+        margin: 10px
+     }
