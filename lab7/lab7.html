@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Interativo</title>
+    <link rel="stylesheet" href="lab7.css">
+    <script src="lab7.js"></script>
+</head>
+<body>
+     <!-- Menu -->
+     <header>
+        <nav>
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="/https-joaopedroinacio.github.io-/index.html">Home</a></li>
+                <li><a href="eventos.html">Página Sporting</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="section">
+        <p id="textoPassa" onmouseover="mudarTexto()" onmouseout="restaurarTexto()"> 1. Passa por aqui!</p>
+    </div>
+
+    <div class="section">
+        <p><span id="textoPinta">2. Pinta-me!</span>
+        <button onclick="pintar('red')">Red</button>
+        <button onclick="pintar('green')">Green</button>
+        <button onclick="pintar('blue')">Blue</button>
+        <button onclick="pintar('black')">Black</button>
+        </p>
+    </div>
+
+    <div class="section">
+        <p>3. Experimenta escrever...
+        <input type="text" id="textoExperimenta" placeholder="Escreva algo" oninput="mudarCorCaixa()">
+        </p>
+    </div>
+
+    <div class="section">
+        <p>4. Escolha uma cor em inglês:
+        <input type="text" id="corEscolha">
+        <button onclick="mudarCor()">submeter</button>
+        </p>
+    </div>
+
+    <div class="section">
+        <p>5.
+        <button onclick="contarcliques()">Conta!</button>
+        <span id="contadorCliques">0</span>
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

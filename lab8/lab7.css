@@ -1,0 +1,37 @@
+/* Estilo do cabeçalho */
+header {
+    background-color: #80d758;
+    padding: 40px;
+    
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+   
+}
+
+nav ul li {
+    margin:0px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Altera a cor ao passar o mouse */
+}
+
