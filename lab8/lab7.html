@@ -1,74 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Interativo</title>
+    <title>Lab-7</title>
     <link rel="stylesheet" href="lab7.css">
-    <script src="lab7.js"></script>
 </head>
+
 <body>
-     <!-- Menu -->
-     <header>
-        <nav>
-            <h1>Menu</h1>
-            <ul>
-                <li><a href="/https-joaopedroinacio.github.io-/index.html">Home</a></li>
-                <li><a href="eventos.html">Página Sporting</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="section">
-        <p id="textoPassa" onmouseover="mudarTexto()" onmouseout="restaurarTexto()"> 1. Passa por aqui!</p>
-    </div>
+    <!-- Navegação -->
+    <nav>
+        <h1>Menu</h1>
+        <a href="/https-joaopedroinacio.github.io-/index.html">Home</a>
+        <a href="eventos.html">Página ChatGPT</a>
+    </nav>
 
-    <div class="section">
-        <p><span id="textoPinta">2. Pinta-me</span></p>
-        <button data-color="red">Red</button>
-        <button data-color="green">Green</button>
-        <button data-color="blue">Blue</button>
-    </div>
+    <!-- Conteúdo Principal -->
+    <main>
+        <ol>
+            <!-- Item 1 -->
+            <li id="item1" onmouseover="mudarTexto()" onmouseout="restaurarTexto()">Passa por aqui!</li>
 
-    <div class="section">
-        <p>3. Experimenta escrever...
-        <input type="text" id="textoExperimenta" placeholder="Escreva algo" oninput="mudarCorCaixa()">
-        </p>
-    </div>
+            <!-- Item 2 -->
+            <li id="item2">
+                Pinta-me!
+                <button data-color="red">Red</button>
+                <button data-color="green">Green</button>
+                <button data-color="blue">Blue</button>
+            </li>
 
-    <div class="section">
-        <p>4. Escolha uma cor:
-            <select id="corEscolhaDropdown" onchange="mudarCorDropdown()">
-                <option value="white">White</option>
-                <option value="red">Red</option>
-                <option value="green">Green</option>
-                <option value="blue">Blue</option>
-                <option value="yellow">Yellow</option>
-                <option value="pink">Pink</option>
-            </select>
-        </p>
-    </div>
+            <!-- Item 3 -->
+            <li id="item3">
+                Experimenta escrever...
+                <input type="text" id="textoExperimenta" placeholder="Escreva algo" oninput="mudarCorCaixa()">
+            </li>
 
-    <div class="section">
-        <p>5.
-        <button onclick="contarcliques()">Conta!</button>
-        <span id="contadorCliques">0</span>
-        </p>
-    </div>
+            <!-- Item 4 -->
+            <li id="item4">
+                Escolha uma cor em inglês:
+                <select id="corEscolhaDropdown" onchange="mudarCorDropdown()">
+                    <option value="white">White</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="pink">Pink</option>
+                </select>
+            </li>
 
-    <div class="section">
-        <p>6.
-            <input type="text" id="nome" placeholder="Nome">
-            <input type="number" id="idade" placeholder="Idade">
-            <button onclick="exibirMensagem()">Submit</button>
-        </p>
-        <p id="mensagem"></p>
-    </div>
+            <!-- Item 5 -->
+            <li id="item5">
+                <button onclick="contarcliques()">Conta!</button>
+                <span id="contadorCliques">0</span>
+            </li>
 
-    <div class="section">
-        <p>7. Automatic Counter: <span id="contadorAutomatico">0</span></p>
-    </div>
+            <!-- Item 6 -->
+            <li id="item6">
+                <form onsubmit="exibirMensagem(); return false;">
+                    <input type="text" id="nome" placeholder="Nome">
+                    <input type="number" id="idade" placeholder="Idade">
+                    <div>
+                    <input type="submit" value="Submit">
+                    </div>
+                </form>
+                <p id="mensagem"></p>
+            </li>
+
+            <!-- Item 7 -->
+            <li id="item7">
+                <p>Automatic Counter: <span id="contadorAutomatico">0</span></p>
+            </li>
+        </ol>
+    </main>
 
     <script src="lab7.js"></script>
 </body>
+
 </html>
