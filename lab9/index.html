@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Loja Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#cart">Cesto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Produtos -->
+    <main>
+        <section id="products">
+            <h2>Selecione os seus Produtos</h2>
+            <!-- Lista de produtos criada dinamicamente -->
+            <ul id="product-list"></ul>
+        </section>
+
+        <!-- Seção do Cesto -->
+        <section id="cart">
+            <h2>Produtos Selecionados</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-cost">Custo total: 0 €</p>
+        </section>
+    </main>
+
+  
+    <script src="produtos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

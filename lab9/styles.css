@@ -1,0 +1,194 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #5c0b87;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Seção de Produtos */
+#products {
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+h2 {
+    color: #5c0b87;
+    margin-bottom: 20px;
+}
+
+/* Grid para a Lista de Produtos */
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas por linha */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Cartão de Produto */
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribui os elementos de forma uniforme */
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    height: 500px; /* Altura fixa para alinhamento */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Imagem do Produto */
+article img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Título e Texto do Produto */
+article h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+article p {
+    flex: 1; /* Preenche o espaço restante */
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+    overflow: auto; /* Permite rolar o texto se for muito longo */
+}
+
+/* Botão de Adicionar ao Cesto */
+button {
+    padding: 10px;
+    width: 100%;
+    background-color: #5c0b87;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #4a0a70;
+}
+
+/* Seção do Cesto */
+#cart {
+    padding: 20px;
+    background-color: #5c0b87;
+    color: white;
+    text-align: center;
+}
+
+/* Grid para a Lista de Produtos no Cesto */
+#cart-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas por linha */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Cartão de Produto no Cesto */
+#cart-items article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: #333;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    height: 350px; /* Altura fixa para alinhamento */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem do Produto no Cesto */
+#cart-items img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#cart-items h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#cart-items p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Botão de Remover do Cesto */
+#cart-items button {
+    padding: 10px;
+    width: 100%;
+    background-color: #b30000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#cart-items button:hover {
+    background-color: #800000;
+}
+
+/* Texto do Custo Total */
+#total-cost {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #fff;
+}
