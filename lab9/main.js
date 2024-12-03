@@ -17,6 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
     atualizaCesto();
 });
 
+article.innerHTML = `
+    <h3>${produto.title}</h3>
+    <img src="${produto.image}" alt="${produto.title}" width="150">
+    <p>Preço: ${produto.price.toFixed(2)} €</p>
+    <p class="descricao">${produto.description}</p>
+`;
+
 // Função para carregar e renderizar os produtos na página
 function carregarProdutos(produtos) {
     produtos.forEach((produto) => {

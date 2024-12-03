@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Loja Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#cart">Cesto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Produtos -->
+    <main>
+        <section id="products">
+            <h2>Selecione os seus Produtos</h2>
+            <!-- Submenu para filtros, ordenação e busca -->
+            <div id="submenu">
+                <span>Filtrar</span>
+                <select id="filtros">
+                    <option value="todas">Todas as categorias</option>
+                </select>
+                <span>Ordenar</span>
+                <select id="ordenar">
+                    <option value="vazio">Ordenar pelo preço</option>
+                    <option value="ascendente">Ascendente</option>
+                    <option value="descendente">Descendente</option>
+                </select>
+                <span>Procurar</span>
+                <input type="text" placeholder="Pesquise por produtos" id="pesquisar">
+            </div>
+            <!-- Lista de produtos renderizada dinamicamente -->
+            <ul id="product-list"></ul>
+        </section>
+
+        <!-- Seção do Cesto -->
+        <section id="cart">
+            <h2>Produtos Selecionados</h2>
+            <!-- Lista de produtos no cesto -->
+            <ul id="cart-items"></ul>
+            <p id="total-cost">Custo total: 0 €</p>
+            <!-- Área de checkout -->
+            <div id="checkout">
+                <p>És estudante do DEISI? <input type="checkbox" id="alunoDeisi"></p>
+                <p>Cupão de Desconto: <input type="text" id="cupao"></p>
+                <button type="submit" id="botao">Comprar</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Referência ao JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
